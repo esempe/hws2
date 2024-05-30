@@ -1,31 +1,39 @@
 .message {
-
+	display: flex;
+	flex-direction: column;
 }
 
 .imageAndText {
-
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
 }
 
 .imageAndText img {
-
+	order: 2;
+	height: 44px;
 }
 
 .text {
-
+	order: 0;
+	background-color: hsl(210, 100%, 40%);
+	padding: 10px 8px;
+	border-radius: 6px;
 }
 
 .text:after {
-
 }
 
 .name {
-
+	display: flex;
+	justify-content: flex-end;
 }
 
 .messageText {
-
 }
 
 .time {
-
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 24px;
 }

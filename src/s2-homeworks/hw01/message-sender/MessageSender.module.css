@@ -1,18 +1,15 @@
 .sendForm {
-
+	display: flex;
 }
 
 .textarea {
-
+	width: 100%;
 }
 
 .button {
-
 }
 
 .button:hover {
-
 }
 .button:active {
-
 }
