@@ -11,6 +11,7 @@
 }
 
 .red {
+	background-color: red;
 }
 
 .default:hover {
@@ -21,7 +22,6 @@
 
 .secondary:hover {
 }
-
 
 .default:active {
 }
