@@ -72,7 +72,7 @@ const Stand = () => {
 						id={"hw4-super-checkbox-with-text"}
 						checked={stateForAllCheckboxes[1]}
 						onChangeChecked={() =>
-							setChecked((p) => [...p, !stateForAllCheckboxes[1]])
+							setChecked([!stateForAllCheckboxes[1], stateForAllCheckboxes[2]])
 						}
 					>
 						some text
@@ -84,7 +84,7 @@ const Stand = () => {
 						id={"hw4-super-checkbox-like-old"}
 						checked={stateForAllCheckboxes[2]}
 						onChangeChecked={() =>
-							setChecked((p) => [...p, !stateForAllCheckboxes[2]])
+							setChecked([stateForAllCheckboxes[1], !stateForAllCheckboxes[2]])
 						}
 					/>
 				</div>
