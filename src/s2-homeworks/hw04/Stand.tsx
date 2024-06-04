@@ -9,7 +9,7 @@ const Stand = () => {
 	const [error, setError] = useState<string>("");
 
 	const [stateForAllCheckboxes, setChecked] = useState<boolean>(false);
-	const [second, setSecond] = useState<boolean>(false);
+	// const [second, setSecond] = useState<boolean>(false);
 
 	return (
 		<div id={"hw4-stand"} className={s.stand}>
@@ -77,8 +77,8 @@ const Stand = () => {
 				<div>
 					<SuperCheckbox
 						id={"hw4-super-checkbox-like-old"}
-						checked={second}
-						onChangeChecked={() => setSecond((p) => !p)}
+						checked={stateForAllCheckboxes}
+						onChangeChecked={() => setChecked((p) => !p)}
 					/>
 				</div>
 			</div>
