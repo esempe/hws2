@@ -28,11 +28,12 @@ const HW7 = () => {
 			{/*демонстрация возможностей компонент:*/}
 			<div className={s2.hw}>
 				<div className={s.container}>
+					{value.value}
 					<div>
 						<SuperSelect
 							id={"hw7-super-select"}
 							options={arr}
-							value={value.value}
+							value={value.id}
 							onChangeOption={onChangeOption}
 						/>
 					</div>
@@ -41,7 +42,7 @@ const HW7 = () => {
 							id={"hw7-super-radio"}
 							name={"hw7-radio"}
 							options={arr}
-							value={value.value}
+							value={value.id}
 							onChangeOption={onChangeOption}
 						/>
 					</div>
