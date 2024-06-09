@@ -11,19 +11,20 @@ import s from "./HW7.module.css";
  * 4 - сделать стили в соответствии с дизайном
  * */
 
-const arr = [
+export type Option = { id: number; value: string | number };
+
+export const arr: Option[] = [
 	{ id: 1, value: "x" },
 	{ id: 2, value: "y" },
 	{ id: 3, value: "z" },
 ]; // value может быть изменено
 
 const HW7 = () => {
-	const [value, onChangeOption] = useState(1); // селект и радио должны работать синхронно
+	const [value, onChangeOption] = useState<Option>(arr[0]); // селект и радио должны работать синхронно
 
 	return (
 		<div id={"hw7"}>
 			<div className={s2.hwTitle}>Homework #7</div>
-			{value}
 			{/*демонстрация возможностей компонент:*/}
 			<div className={s2.hw}>
 				<div className={s.container}>
@@ -31,7 +32,7 @@ const HW7 = () => {
 						<SuperSelect
 							id={"hw7-super-select"}
 							options={arr}
-							value={value}
+							value={value.id}
 							onChangeOption={onChangeOption}
 						/>
 					</div>
@@ -40,7 +41,7 @@ const HW7 = () => {
 							id={"hw7-super-radio"}
 							name={"hw7-radio"}
 							options={arr}
-							value={value}
+							value={value.value}
 							onChangeOption={onChangeOption}
 						/>
 					</div>
