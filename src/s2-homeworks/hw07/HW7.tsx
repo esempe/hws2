@@ -32,7 +32,7 @@ const HW7 = () => {
 						<SuperSelect
 							id={"hw7-super-select"}
 							options={arr}
-							value={value.id}
+							value={value.value}
 							onChangeOption={onChangeOption}
 						/>
 					</div>
